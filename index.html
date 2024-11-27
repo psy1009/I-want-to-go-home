@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>집 가고 싶다</title>
+    <link href="home_image.jpg" rel="shortcut icon">
+    <style>
+        body {
+            background-image: linear-gradient(to right, #ffd7d7, #ffdcc6, #f4f4d4);
+            background-size: cover;
+        }
+
+        .navigator {
+            display: flex;
+            width: 100%;
+            height: 120px;
+            background-image: linear-gradient(to right, #ff7c7c, #daa4fe);
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .logo {
+            display: inline-block;
+            margin: auto 50px;
+            font-weight: 800;
+            font-size: xx-large;
+            color: white;
+        }
+
+        .i-want-to-go-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 200px;
+            font-size: xx-large;
+            margin: 50px auto;
+            border: 20px solid #fe8383;
+            border-radius: 50px;
+            filter: drop-shadow(5px 5px 10px #fc9c97) drop-shadow(-5px -5px 10px #fc9c97);
+
+            transition: all 0.3s ease-in;
+        }
+
+        .i-want-to-go-home:hover {
+            filter: drop-shadow(5px 5px 10px #fb6c65) drop-shadow(-5px -5px 10px #fb6c65);
+        }
+
+        .main-text {
+            color: white;
+
+            transition: all 0.3s ease-in;
+        }
+
+        .main-text:hover {
+            color: white;
+        }
+        
+        .first-box {
+            display: flex;
+            border: 20px solid #eb88f0;
+            border-radius: 100px;
+            background-image: linear-gradient(135deg, #faaafe, #f4f4d4);
+            width: 1075px;
+            height: 500px;
+            margin: 100px auto;
+            
+            transition: all 0.3s ease-in;
+            animation: fly-3 4s ease-in 0s infinite;
+        }
+    
+        .first-box:hover {
+            filter: drop-shadow(5px 5px 10px #db82ff) drop-shadow(-5px -5px 10px #db82ff);
+        }
+
+        .home-image {
+            width: 450px;
+            margin: 200px 20px 0px;
+            border-radius: 50px;
+            float: left;
+
+            transition: all 0.3s ease-in;
+            animation: fly-2 4s ease-in 0s infinite;
+        }
+
+        .home-image:hover {
+            filter: drop-shadow(5px 5px 10px #ffff36) drop-shadow(-5px -5px 10px #ffff36);
+        }
+
+        .reasons {
+            display: block;
+            width: 500px;
+            height: 250px;
+            margin: 30px 20px;
+            text-align: center;
+            border: 20px solid #ffff72;
+            border-radius: 50px;
+            background-image: linear-gradient(to right, #fcb1b1, #f7f7ab);
+            filter: drop-shadow(5px 5px 10px #ffffc5) drop-shadow(-5px -5px 10px #ffffc5);
+            float: right;
+
+            transition: all 0.3s ease-in;
+            animation: fly-1 4s ease-in 0s infinite backwards normal;
+        }
+
+        .reasons:hover {
+            transform:  rotate(0.5deg) translateY(-10px);
+            filter: drop-shadow(10px 10px 10px #ffff11) drop-shadow(-5px -5px 10px #ffff11);
+        }
+
+        .title {
+            color: white;
+        }
+        
+        p {
+            display: block;
+            margin: 10px 10px;
+            color: white;
+            font-weight: 550;
+        }
+
+        .second-box {
+            display: flex;
+            border: 20px solid #f7f757;
+            border-radius: 100px;
+            background-image: linear-gradient(135deg, #f19dfa, #f4f4d4);
+            width: 1075px;
+            height: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            
+            transition: all 0.3s ease-in;
+            animation: fly-1 4s ease-in 0s infinite;
+        }
+
+        .second-box:hover {
+            filter: drop-shadow(5px 5px 10px #ffff44) drop-shadow(-5px -5px 10px #ffff44);
+        }
+        
+        .home-description {
+            display: block;
+            width: 500px;
+            height: 200px;
+            margin: 180px 30px;
+            padding: 0px;
+            text-align: center;
+            border: 20px solid #ffaeff;
+            border-radius: 50px;
+            background-image: linear-gradient(to right, #fcb1b1, #fd96ff);
+            filter: drop-shadow(5px 5px 10px #febbff) drop-shadow(-5px -5px 10px #febbff);
+            float: left;
+
+            transition: all 0.3s ease-in;
+            animation: fly-3 4s ease-in 1s infinite forwards normal;
+        }
+
+        .title-2 {
+            color: white;
+        }
+
+        .home-description:hover {
+            transform:  rotate(-0.5deg) translateY(-10px);
+            filter: drop-shadow(10px 10px 10px #ff76ff) drop-shadow(-5px -5px 10px #ff76ff);
+        }
+
+        .home-image-2 {
+            width: 450px;
+            margin: 50px 50px;
+            border-radius: 50px;
+            float: left;
+
+            transition: all 0.3s ease-in;
+            animation: fly-1 4s ease-in 0s infinite;
+        }
+
+        .home-image-2:hover {
+            filter: drop-shadow(5px 5px 10px #fc63fc) drop-shadow(-5px -5px 10px #fc63fc);
+        }
+
+        @keyframes fly-1 {
+            0% {
+                transform: translateX(8px) translateY(-4px);
+            }
+
+            33.33% {
+                transform: translateX(6px) translateY(11px);
+            }
+
+            66.66% {
+                transform: translateX(0px) translateY(4px);
+            }
+
+            100% {
+                transform: translateX(8px) translateY(-4px);
+            }
+        }
+
+        @keyframes fly-2 {
+            0% {
+                transform: translateX(-6px) translateY(4px);
+            }
+
+            33.33% {
+                transform: translateX(1px) translateY(-3px);
+            }
+
+            66.66% {
+                transform: translateX(4px) translateY(-6px);
+            }
+
+            100% {
+                transform: translateX(-6px) translateY(4px);
+            }
+        }
+
+        @keyframes fly-3 {
+            0% {
+                transform: translateX(2px) translateY(-3px);
+            }
+
+            33.33% {
+                transform: translateX(-7px) translateY(5px);
+            }
+
+            66.66% {
+                transform: translateX(6px) translateY(-2px);
+            }
+
+            100% {
+                transform: translateX(2px) translateY(-3px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigator">
+            <h1 class="logo">집 가고 싶다..</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="i-want-to-go-home">
+            <h1 class="main-text">집 가고 싶다...</h1>
+        </div>
+        <div class="first-box">
+            <div class="home-img">
+                <img src="home_image_2.jpg" alt="아늑한 집의 사진" class="home-image">
+            </div>
+            <div class="reasons">
+                <h1 class="title">지금 집에 가야하는 이유</h1>
+                <p style="float: left;">1. 집에 너무 가고 싶기 때문이다.</p>
+                <p style="float: left;">2. 집에 진짜 너무 가고 싶기 때문이다.</p>
+                <p style="float: left;">3. 집에 진짜 진짜 진짜 가고 싶기 때문이다.</p>
+            </div>
+        </div>
+        <div class="second-box">
+            <div class="home-img-2">
+                <img src="home_image_3.jpg" alt="아늑한 집의 사진 2" class="home-image-2">
+            </div>
+            <div class="home-description">
+                <h1 class="title-2">집은 어떤 곳인가?</h1>
+                <p style="float: left;">소파, 침대가 있어 편안한 안식처가 되어준다.</p>
+                <p style="float: left;">집에 있으면 웬지 모르게 마음이 편해진다.</p>
+            </div>
+        </div>
+        <!-- <div class="home-image-div">
+            <img src="home_image_2.jpg" alt="아늑한 집의 사진" class="home-image">
+        </div> -->
+    </main>
+</body>
+</html>
